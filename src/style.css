@@ -1,0 +1,37 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 300vw; /* 3 panels */
+  height: 100vh;
+}
+
+.step {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  transition: background 0.5s ease;
+}
+
+.step:nth-child(even) {
+  background: #f6f6f6;
+}
+
+.step:nth-child(odd) {
+  background: #d0d0d0;
+}
+
+.step.active {
+  background: #add8ef !important;
+}
+
